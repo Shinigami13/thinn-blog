@@ -1,0 +1,21 @@
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+<h1 id="draggable">Posts#new</h1>
+<p>Find me in app/views/posts/new.html.erb</p>
+
+<h1>Create a Post</h1>
+
+<%= form_for @post, html: { multipart: true } do |f| %>
+<%= f.text_area :caption, placeholder: 'Add a caption' %> <br>
+<%= f.file_field :photo %><br>
+<input type="date" id="datepicker"3>
+<%= f.submit 'Finished' %>
+<% end %>
+
+<div id="accordion" >
+  <h3>First header</h3>
+  <div>First content panel</div>
+  <h3>Second header</h3>
+  <div>Second content panel</div>
+</div>

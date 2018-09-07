@@ -1,0 +1,19 @@
+<h1>Posts#index</h1>
+<p>Find me in app/views/posts/index.html.erb</p>
+
+<button id="opener">open the dialog</button>
+<div id="dialog" title="Dialog Title">I'm a dialog</div>
+
+<div class="news-feed">
+
+</div>
+<h1>News Feed </h1>
+
+<% @posts.each do |post| %>
+<div class="post-image">
+  <img src="/heart.png" class="like-heart">
+<%= image_tag(post.photo(:main), id: "image-#{post.id}") %>
+<div>
+<p><%= post.caption %></p>
+<% end %>
+<div>
